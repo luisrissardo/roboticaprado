@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow-y: hidden;
+}
+h1, h2, h3, h4, h5, h6, p{
+    font-weight: 300;
+}
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Jura';
+    width: 100%;
+    max-width: 100vw;
+    transition: 0s;
+    background-color: black;
+    color: white;
+    overflow-y: visible;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    position: absolute;
+    transition: .5s;
+}
+header:hover{
+    background-color: black;
+    border-bottom: 2px #84cd57 solid;
+}
+header:hover nav{
+    border: 0px;
+}
+.icons-header{
+    width: 30vw;
+    height: 12vh;
+    display: flex;justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+}
+.pradotech-icon{
+    width: 100%;
+}
+.icons-header a{ 
+    max-width: 30%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: fit-content;
+}
+.gm-icon{
+    width: 35%;
+}
+nav{
+    width: 50vw;
+    height: 100%;
+    margin-left: 50vw;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px #84cd57 solid;
+    transition: .5s;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+nav ul li a{
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+nav ul li a:hover{
+    color: #0073de;
+}
+main{
+    width: 100vw;
+    background-color: blue;
+}
+#inicio{
+    width: 100%;
+    height: 100vh;
+    background: url(img/banner2.jpg)  no-repeat top/cover;
+    display: flex;
+}
+.container-inicial{
+    background: linear-gradient(rgba(0, 0, 0, 0.6) 75%, black);
+    width: 100%;
+    height: 100%;
+}
+.container-inicial h1 b{
+    color: #84cd57;
+}
+.text-inicio{
+    width: 100%;
+    height: 60%;
+    margin-top: 11%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 2.2rem;
+}
+.text-inicio h1{
+    margin-left: 53%;
+    width: 45%;
+    font-size: 40px;
+    margin-bottom: -.3%;
+}
+.text-inicio p{
+    width: 41.5%;
+    text-align: justify;
+    font-size: 27px;
+    margin-left: 53%;
+}
+.text-inicio p b{
+    color: #84cd57;
+}
+.text-inicio a{
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    border: 2px white solid;
+    width: 15%;
+    height: 13%;
+    text-align: center;
+    margin-left: 53%;
+    padding-top: .7%;
+    transition: 1s;
+}
+.text-inicio a:hover{
+    border: 2px #84cd57 solid;
+    border-radius: 50px;
+}
+.bottom-itens{
+    width: 100%;
+    height: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40vw;
+}
+.img-inicial{
+    display: flex;
+    width: 20%;
+    height: 100%;
+    gap: 1.3rem;
+    align-items: center;
+}
+.img-inicial img{
+    width: 15%; 
+}
+.img-inicial p{
+    font-size: 25px;
+}
+.midias{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.img-inicial img:hover, .img-inicial p:hover, .midias img:hover{
+    cursor: pointer;
+}
+#cursos{
+    width: 100%;
+    height: 100vh;
+}
