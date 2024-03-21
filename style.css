@@ -482,7 +482,7 @@ main{
         font-size: 20px;
     }
     p{
-        font-size: 12px;
+        font-size: 14px;
     }
     .text h1{
         font-size: 14px;
@@ -535,8 +535,8 @@ main{
     }
     .gm-content button{
         font-size: 10px;
-        width: 50%;
-        height: 5%;
+        width: 80%;
+        height: 13%;
         border: 1px white solid;
     }
     #general .conteudo-vinheta{
