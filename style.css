@@ -201,13 +201,18 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    border: 1px transparent solid;
     transition: .6s;
 }
-.curso1:hover, .curso2:hover, .curso3:hover{
-    background-color: blue;
+.curso1:hover{
+    border-bottom: 2px #0073de solid;
 }
-.curso1.open:hover, .curso2.open:hover, .curso3.open:hover{
-    background-color: transparent;
+.curso2:hover{
+    border-bottom: 2px #0073de solid;
+    border-top: 2px #0073de solid;
+}
+.curso3:hover{
+    border-top: 2px #0073de solid;
 }
 .curso2{
     width: 100%;
@@ -215,6 +220,7 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    border: 1px transparent solid;
     transition: .6s;
 }
 .curso3{
@@ -223,6 +229,7 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    border: 1px transparent solid;
     transition: .6s;
 }
 .curso3.open{
