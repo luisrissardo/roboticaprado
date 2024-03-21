@@ -546,4 +546,7 @@ main{
         flex-direction: column;
         background: linear-gradient(black, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4), black 90%);
     }
+    #general{
+        height: 60vh;
+    }
 }
