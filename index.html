@@ -12,16 +12,16 @@
 </head>
 <body>
     <header>
-        <div class="icons-header">
+        <div class="icons-header" id="icons-header">
             <a href="https://www.sinodalprado.com.br/sinodal-prado-lanca-novo-curso-tecnico/" target="_blank"><img src="img/pradotech-icon.png" class="pradotech-icon" alt="Logotipo"></a>
             <a href="https://media.gm.com/brasil" target="_blank"><img src="img/gm-icon.png" alt="Logotipo General Motors" class="gm-icon"></a>
         </div>
         <nav>
             <ul>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Inscreva-se</a></li>
-                <li><a href="#">Sinodal</a></li>
-                <li><a href="#">General Motors</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSefWaTtqrmc-y4ealdXCrm93BlsD2anIdrL0MJwvXPVLvY3mg/viewform" target="_blank">Inscreva-se</a></li>
+                <li><a href="#sinodal">Sinodal</a></li>
+                <li><a href="#general">General Motors</a></li>
             </ul>
         </nav>
     </header>
@@ -30,14 +30,14 @@
             <div class="container-inicial">
                 <div class="text-inicio">
                     <h1>Cursos de <b>formação continuada</b> em Automação de Robótica</h1>
-                    <p>Neste ano, o colégio Sinodal Prado, em parceria com o grupo General Motors, estará disponibilizando cursos relacionados à área de automatização industrial, sendo eles <b>os únicos cursos com aulas práticas em um robô Fanuc no Rio Grande do Sul</b>.
+                    <p>&nbsp Neste ano, o colégio Sinodal Prado, em parceria com o grupo General Motors, estará disponibilizando cursos relacionados à área de automatização industrial, sendo um deles <b>o único curso com aulas práticas em um robô Fanuc no Rio Grande do Sul</b>.
                     </p>
-                    <a href="#">Saiba mais</a>
+                    <a href="#cursos">Saiba mais</a>
                 </div>
                 <div class="bottom-itens">
                     <div class="img-inicial">
-                        <img src="img/down-arrow-backup-2-svgrepo-com.svg">
-                        <p>Veja mais</p>
+                        <img src="img/down-arrow-backup-2-svgrepo-com.svg" onclick="location.href='#cursos'">
+                        <p onclick="location.href='#cursos'">Veja mais</p>
                     </div>
                     <div class="midias">
                         <a href="https://www.facebook.com/sinodalpradogravatai" target="_blank"><img src="img/facebook.svg" alt="Facebook logo"></a>
@@ -52,9 +52,97 @@
         </section>
         <section id="cursos">
             <div class="headcursos">
-                
+                <h1>Cursos</h1>
+                <h2>Interessado(a)? &nbsp<a href="https://docs.google.com/forms/d/e/1FAIpQLSefWaTtqrmc-y4ealdXCrm93BlsD2anIdrL0MJwvXPVLvY3mg/viewform" target="_blank">Inscreva-se aqui!</a></h2>
+            </div>
+            <div class="curso1" id="curso1">
+                <div class="texto-principal">
+                    <div class="text">
+                        <h1>Explorando a Programação <b>PLC</b></h1>
+                        <p>Curso inicial de automação industrial - Simuladores.</p>
+                        <p>Carga horária: 40 horas.</p>
+                    </div>
+                    <div class="vejamais">
+                        <p onclick="cursoopen1()" id="cursoopener1">Veja mais</p>
+                        <img src="img/down-arrow-backup-2-svgrepo-com.svg">
+                    </div>
+                </div>
+                <div class="texto-secundario">
+                    <p><b>Neste curso você vai aprender:</b><br>
+                        Fundamentos de eletrônica. Funções Básicas de PLC: ( entradas,saídas e bobinas,Temporizadores). Princípios básicos de programação. Aprendendo a programar com uso de simuladores. Aprendendo a programar(programar sequência de acionamentos)
+                        Integrando programa CLP aos periféricos. Aprendendo a desenvolver diagrama de programação. Aprendendo a desenvolver diagrama elétrico unifilar/multifilar. Configuração Básica de entradas e saídas.
+                    </p>
+                </div>
+            </div>
+            <div class="curso2" id="curso2">
+                <div class="texto-principal">
+                    <div class="text">
+                        <h1>Fundamentos de Robótica <b>Industrial</b></h1>
+                        <p>Introdução à Programação - Simuladores.</p>
+                        <p>Carga horária: 30 horas.</p>
+                    </div>
+                    <div class="vejamais">
+                        <p onclick="cursoopen2()" id="cursoopener2">Veja mais</p>
+                        <img src="img/down-arrow-backup-2-svgrepo-com.svg">
+                    </div>
+                </div>
+                <div class="texto-secundario">
+                    <p><b>Neste curso você vai aprender: </b><br>Fundamentos do simulador e escolha de robô(mover  a tela 360º). Entendendo Coordenadas( explicação em lousa). Ferramenta com uso de biblioteca virtual.  
+                        Entendendo linhas de movimentos e aplicações. Criando rotina de programação (entendendo Programas Macros). Home position (Reference Position). Escolhendo subrotinas no programa principal. Funções Wait, JMP/LBL ,I/Os, Override Realizar Backup de programas e deletar rotinas.</p>
+                </div>
+            </div>
+            <div class="curso3" id="curso3">
+                <div class="texto-principal">
+                    <div class="text">
+                        <h1>Robótica <b>Industrial</b></h1>
+                        <p>Introdução à Programação - Robô Fanuc.</p>
+                        <p>Carga horária: 30 horas.</p>
+                    </div>
+                    <div class="vejamais">
+                        <p onclick="cursoopen3()" id="cursoopener3">Veja mais</p>
+                        <img src="img/down-arrow-backup-2-svgrepo-com.svg">
+                    </div>
+                </div>
+                <div class="texto-secundario">
+                    <p><b>Neste curso você vai aprender:</b><br>
+                        Introdução as unidades de programação. Entendo coordenadas. Endendo linhas de movimento Move L,Move J e Move C. Programação básica de rotinas. Entendo Macros( Home Position e Macros de acionamentos). Acionamento de entradas e saídas  via rede Devicenet. Entendo dispositivos externos(sensores indutivos,vacuostato).  Entender realizar Backups Allof Above e Image, deletar rotinas.  Entender Calibração por zero e marcas dos eixos do robô.
+                        As aulas ocorrem de duas a três vezes na semana, tem duração de 3 horas aula e os cursos são concluídos em aproximadamente 1 mês.</p>
+                </div>
+            </div>
+        </section>
+        <section id="sinodal">
+            <div class="conteudo-vinheta">
+                <div class="header-sinodal">
+                    <img src="img/prado-icon.png" alt="Sinodal prado logotipo">
+                    <h1><b>Sinodal Prado</b></h1>
+                </div>
+                <div class="descricao-sinodal">
+                    <p>&nbsp Inaugurado em 2022, o Colégio Sinodal Prado investe em tecnologia e formação técnica, preparando os alunos para o futuro. Priorizando habilidades práticas, pensamento crítico e valores éticos, a instituição forma profissionais conscientes e aptos para os desafios do mundo contemporâneo.</p>
+                    <a href="https://www.sinodalprado.com.br/" target="_blank">Acesse nosso Website</a>
+                </div>
+                <div class="parcerias">
+                    <img src="img/prefeitura2.png" alt="Prefeitura de Gravataí" class="img-parceiro">
+                    <img src="img/agti2.png" alt="AGTI" class="agti-icone">
+                    <img src="img/smict2.png" alt="SMICT" class="img-parceiro2">
+                    <img src="img/sesi-icon.png" alt="SESI" class="img-parceiro">
+                </div>
+            </div>
+        </section>
+        <section id="general">
+            <div class="conteudo-vinheta">
+                <div class="header-gm">
+                    <img src="img/gm-icon.png" alt="General Motors Logotipo">
+                    <h1 class="gmtitle">General Motors</h1>
+                </div>
+                <div class="gm-content">
+                    <p>
+                        &nbsp A General Motors é uma reconhecida empresa multinacional com especialização no setor automotivo, que se destaca por promover a inovação, tecnologia, qualidade e profissionalismo. Em colaboração com o Sinodal Prado, a GM forneceu um robô Fanuc para ser utilizado nos cursos oferecidos pela instituição.
+                    </p>
+                    <a href="https://media.gm.com/brasil" target="_blank"><button>Conheça a GM</button></a>
+                </div>
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

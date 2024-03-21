@@ -1,9 +1,16 @@
 *{
     box-sizing: border-box;
-    overflow-x: hidden;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    overflow-y: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+.scroll{
+    opacity: .5;
+}
+b{
+    color: #84cd57;
 }
 h1, h2, h3, h4, h5, h6, p{
     font-weight: 300;
@@ -18,7 +25,7 @@ body{
     transition: 0s;
     background-color: black;
     color: white;
-    overflow-y: visible;
+    overflow-x: hidden;
 }
 header{
     width: 100%;
@@ -36,13 +43,18 @@ header:hover{
 header:hover nav{
     border: 0px;
 }
+header:hover .icons-header{
+    opacity: 1;
+}
 .icons-header{
     width: 30vw;
     height: 12vh;
-    display: flex;justify-content: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     overflow: hidden;
     position: fixed;
+    transition: .5s;
 }
 .pradotech-icon{
     width: 100%;
@@ -82,7 +94,7 @@ nav ul li a:hover{
 }
 main{
     width: 100vw;
-    background-color: blue;
+    background-color: black;
 }
 #inicio{
     width: 100%;
@@ -95,9 +107,6 @@ main{
     width: 100%;
     height: 100%;
 }
-.container-inicial h1 b{
-    color: #84cd57;
-}
 .text-inicio{
     width: 100%;
     height: 60%;
@@ -108,6 +117,7 @@ main{
     line-height: 2.2rem;
 }
 .text-inicio h1{
+    overflow: hidden;
     margin-left: 53%;
     width: 45%;
     font-size: 40px;
@@ -118,9 +128,6 @@ main{
     text-align: justify;
     font-size: 27px;
     margin-left: 53%;
-}
-.text-inicio p b{
-    color: #84cd57;
 }
 .text-inicio a{
     font-size: 22px;
@@ -171,5 +178,220 @@ main{
 }
 #cursos{
     width: 100%;
+    height: fit-content;
+    transition: 1s;
+}
+.headcursos{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 54vw;
+}
+.headcursos h1{
+    font-size: 50px;
+}
+.headcursos h2 a{
+    color: #84cd57;
+}
+.curso1{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: .6s;
+}
+.curso1:hover, .curso2:hover, .curso3:hover{
+    background-color: blue;
+}
+.curso1.open:hover, .curso2.open:hover, .curso3.open:hover{
+    background-color: transparent;
+}
+.curso2{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: .6s;
+}
+.curso3{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: .6s;
+}
+.curso3.open{
+    height: 40%;
+}
+.curso2.open{
+    height: 40%;
+}
+.curso1.open{
+    height: 40%;
+}
+.curso1.open .texto-secundario, .curso2.open .texto-secundario, .curso3.open .texto-secundario{
+    display: block;
+    animation: fade-in 1s forwards ;
+}
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.texto-principal{
+    display: flex;
+    width: 100%;
+}
+.texto-secundario{
+    font-size: 20px;
+    text-align: justify;
+    padding: 0% 5%;
+    display: none;
+}
+.text{
+    width: 50%;
+    padding-left: 5%;
+}
+.text h1{
+    font-size: 30px;
+}
+.text p{
+    font-size: 25px;
+}
+.vejamais{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 5%;
+    width: 50%;
+    font-size: 25px;
+    gap: 1rem;
+}
+.vejamais img{
+    width: 3%;
+}
+.vejamais p:hover, .vejamais img:hover{
+    cursor: pointer;
+}
+#sinodal{
+    width: 100%;
     height: 100vh;
+    background: url(img/sinodalprado2.jpg) no-repeat center/cover;
+}
+.conteudo-vinheta{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(black, rgba(0, 0, 0, 0.4) 10%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4), black 90%);
+}
+.header-sinodal{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    gap: 53%;
+}
+.header-sinodal img{
+    width: 15%;
+}
+.descricao-sinodal{
+    width: 100%;
+    height: 60%;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 50%;
+    text-align: justify;
+}
+.descricao-sinodal a{
+    border: 2px white solid;
+    width: 40%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 17%;
+    color: white;
+    text-decoration: none;
+    transition: .6s;
+}
+.descricao-sinodal a:hover{
+    border-radius: 50px;
+    border-color: #84cd57;
+}
+.parcerias{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 5%;
+    gap: 4rem;
+}
+.img-parceiro{
+    width: 8%;
+}
+.img-parceiro2{
+    width: 15%;
+}
+.agti-icone{
+    width: 3%;
+}
+#general{
+    width: 100%;
+    height: 100vh;
+    background: url(img/gmairview.jpg) no-repeat center/cover;
+}
+.header-gm{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    font-size: 30px;    
+    gap: 3%;
+    padding-left: 5%;
+}
+.header-gm img{
+    width: 5%;
+}
+.gmtitle{
+    color: #0073de;
+    font-weight: 700;
+}
+.gm-content{
+    width: 100%;
+    height: 90%;
+    padding-left: 50%;
+    padding-top: 10%;
+    padding-right: 5%;
+    text-align: justify;
+    font-size: 25px;
+}
+.gm-content button{
+    width: 30%;
+    height: 15%;
+    font-size: 20px;
+    font-family: 'Jura';
+    background-color: transparent;
+    color: white;
+    border: 2px white solid;
+    transition: .6s;
+}
+.gm-content button:hover{
+    cursor: pointer;
+    border-radius: 50px;
+    border-color: #0073de;
 }
